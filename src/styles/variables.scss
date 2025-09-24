@@ -1,0 +1,29 @@
+:root {
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-white-02: #F0F0F0;
+  --color-white-03: #F2F0F1;
+  --color-grey: #6E6E6E; // --color-black 60%
+  --color-grey-50: rgba(--color-grey, 0.5);
+  --color-red: #FF3333;
+  --color-red-10p: rgba(--color-red, 0.1);
+
+  --border: var(--border-width-s) solid var(--color-grey);
+
+  --border-width: 2px;
+  --border-width-s: 1px;
+
+  --border-radius-l: 40px;
+  --border-radius: 20px;
+  --border-radius-s: 15px;
+
+  --font-family-base: 'IntegralCF';
+
+  --container-width: #{fluid-to-laptop(
+      $container-desktop-width,
+      $container-laptop-width
+    )};
+  --container-padding-x: 16px;
+
+  --transition-duration: 0.2s;
+}
