@@ -1,0 +1,20 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.socials__button {
+  display: inline-flex;
+  align-items: center;
+  @include square(40px);
+  padding: 10px;
+  border: var(--border-width-s) solid var(--color-grey);
+  border-radius: 50%;
+  background-color: var(--color-white);
+
+  @include hover {
+    border-color: var(--color-black);
+  }
+}

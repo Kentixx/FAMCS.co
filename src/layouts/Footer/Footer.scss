@@ -1,4 +1,25 @@
 .footer {
   padding-block: 20px;
-  background-color: var(--color-gray);
+  background-color: var(--color-white-02);
+
+  &__menu {
+    --footerMenuColumns: 4;
+
+    display: grid;
+    grid-template-columns: repeat(var(--footerMenuColumns), 1fr);
+    gap: 24px fluid(110, 60);
+    padding-block: fluid(50, 25);
+    border-bottom: var(--border);
+
+    @include mobile {
+      --footerMenuColumns: 2;
+    }
+
+    &-column {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      row-gap: 16px;
+    }
+  }
 }

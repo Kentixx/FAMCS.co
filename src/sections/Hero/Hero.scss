@@ -1,3 +1,141 @@
 .hero {
-  padding-block: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 116px;
+  justify-content: center;
+  background-color: var(--color-white-03);
+
+  padding-block: var(--section-padding-y);
+
+  @include mobile {
+    min-height: 639px;
+  }
+
+  &__body {
+    display: flex;
+    align-items: stretch;
+    //height: 100vh;
+    z-index: 1;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: fluid(32, 24);
+  }
+
+  &__title {
+    font-family: var(--font-family-base);
+    line-height: 1.05;
+  }
+
+  &__description, &__stat__label {
+    @include fluid-text(16, 14);
+
+    color: var(--color-grey);
+    line-height: 1.375;
+  }
+
+  &__button {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border: none;
+    padding: 16px 54px;
+    border-radius: 50px;
+    text-wrap: nowrap;
+
+    @include hover {
+      background-color: var(--color-grey);
+      color: var(--color-white);
+
+      transition-duration: var(--transition-duration);
+    }
+  }
+
+  &__pano {
+    width: 663px;
+    position: relative;
+    display: flex;
+    //justify-content: center;
+    background-image: url('@/assets/images/hero.png');
+    background-size: cover;
+    background-position: center;
+    //overflow: hidden;
+    z-index: -1;
+
+    @include mobile-above {
+      margin-bottom: -116px;
+    }
+
+    @include mobile {
+      background-image: url('@/assets/images/hero-mobile.png');
+      background-position: top;
+    }
+
+    &-astroid {
+      color: var(--color-black);
+      position: absolute;
+
+      &-left {
+        @include square(fluid(56, 44));
+        top: 40%;
+        left: 5%;
+      }
+
+      &-right {
+        @include square(fluid(104, 76));
+        top: 15%;
+        right: 10%;
+      }
+    }
+  }
+
+  &__stats {
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+    flex-wrap: wrap;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 12px;
+    }
+  }
+
+  &__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-wrap: nowrap;
+    margin-top: 16px;
+  }
+
+  &__brands {
+    width: 100vw;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px;
+    background-color: var(--color-black);
+
+    &-icon {
+      display: inline;
+      color: var(--color-white);
+      height: fluid(38, 25);
+    }
+
+    @include mobile {
+      align-items: center;
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+  }
 }

@@ -9,16 +9,17 @@ body {
 
   display: flex;
   flex-direction: column;
-  font-family: var(--font-family-base), sans-serif;
-  font-weight: 700;
+  font-family: var(--font-family-secondary), sans-serif;
+  font-weight: 400;
   color: var(--color-black);
-  background-color: var(--color-white);
+  background-color: var(--color-white-02);
 }
 
 h1,
 .h1 {
   @include fluid-text(64, 36);
 
+  font-family: var(--font-family-base);
   font-weight: 900;
 }
 
@@ -26,6 +27,7 @@ h2,
 .h2 {
   @include fluid-text(48, 32);
 
+  font-family: var(--font-family-base);
   font-weight: 700;
 }
 
@@ -84,4 +86,9 @@ a {
 
 :focus-visible {
   @include focus-visible;
+}
+
+.svg {
+  min-width: 24px;
+  min-height: 24px;
 }

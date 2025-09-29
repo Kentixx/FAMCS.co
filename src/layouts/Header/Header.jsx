@@ -4,63 +4,75 @@ import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
 import Icon from '@/components/Icon'
+import Socials from "@/components/Socials";
+import Field from "@/components/Field";
 
 export default (props) => {
-  const { url } = props
-
   const menuItems = [
     {
-      label: 'Home',
+      label: 'Shop',
       href: '/',
     },
     {
-      label: 'About',
-      href: '/about',
+      label: 'On Sale',
+      href: '/',
+    },
+    {
+      label: 'New Arrivals',
+      href: '/',
+    },
+    {
+      label: 'Brands',
+      href: '/',
     },
   ]
 
   return (
     <header className="header" data-js-overlay-menu="">
       <div className="header__inner container">
-        <Logo className="header__logo" loading="eager" />
-        <dialog
-          className="header__overlay-menu-dialog"
-          data-js-overlay-menu-dialog=""
-        >
-          <nav className="header__menu">
-            <ul className="header__menu-list">
-              {menuItems.map(({ label, href }, index) => (
-                <li className="header__menu-item" key={index}>
-                  <a
-                    className={clsx(
-                      'header__menu-link',
-                      href === url && 'is-active'
-                    )}
-                    href={href}
-                  >
-                    {label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className="header__actions">
-            <Button className="header__button">
-              <span>Search</span>
-              <Icon name="search" />
-            </Button>
-            <Button className="header__button">
-              <span>Notifications</span>
-              <Icon name="notification" />
-            </Button>
+        <h4 className="header__title">
+          FAMCS.CO
+        </h4>
+        <nav className="header__menu">
+          <ul className="header__menu-list">
+            {menuItems.map(({ label, href}) => (
+              <li className="header__menu-item">
+                <a className="header__menu-link" href={href}>
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="header__search">
+            <Icon
+              name="search"
+              hasFill
+              width={20}
+              height={20}
+            />
+            <input
+              className="header__search-input"
+              type="text"
+              placeholder="Search for products..."
+            />
           </div>
-        </dialog>
-        <BurgerButton
-          className="header__burger-button visible-tablet"
-          extraAttrs={{
-            'data-js-overlay-menu-burger-button': '',
-          }}
-        />
+          <div className="header__actions">
+            <Icon
+              name="basket"
+              hasFill
+              ariaLabel="Shopping cart"
+              width={22}
+              height={22}
+            />
+            <Icon
+              name="profile"
+              hasFill
+              ariaLabel="Profile"
+              width={22}
+              height={22}
+            />
+          </div>
+        </nav>
       </div>
     </header>
   )

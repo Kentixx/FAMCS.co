@@ -21,7 +21,9 @@
   --font-family-secondary: 'Satoshi';
 
   --container-width: #{$container-desktop-width};
-  --container-padding-x: 16px;
+  --container-padding-x: 50px;
+
+  --section-padding-y: #{fluid(75, 40)};
 
   --transition-duration: 0.2s;
 }

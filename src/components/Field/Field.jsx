@@ -15,6 +15,7 @@ export default (props) => {
     isRequired,
     inputMode,
     mask,
+    iconName,
   } = props
 
   const Component = type === 'textarea' ? 'textarea' : 'input'

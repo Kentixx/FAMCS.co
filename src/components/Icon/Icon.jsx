@@ -3,7 +3,14 @@ import clsx from 'clsx'
 import { Icon as MinistaIcon } from 'minista'
 
 export default (props) => {
-  const { className, name, hasFill = false, ariaLabel } = props
+  const {
+    className,
+    name,
+    hasFill = false,
+    ariaLabel,
+    width,
+    height,
+  } = props
 
   return (
     <span className={clsx('icon', className)} aria-label={ariaLabel}>
@@ -11,6 +18,8 @@ export default (props) => {
         iconId={name}
         fill={hasFill ? 'currentColor' : 'none'}
         stroke={hasFill ? 'none' : 'currentColor'}
+        width={width}
+        height={height}
       />
     </span>
   )
