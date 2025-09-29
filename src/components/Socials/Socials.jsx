@@ -21,7 +21,7 @@ const Socials = (props) => {
       iconName: 'instagram',
     },
     {
-      href: '/',
+      href: 'https://github.com/Kentixx/FAMCS.co',
       iconName: 'github',
     },
   ]

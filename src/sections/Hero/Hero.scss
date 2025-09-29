@@ -6,7 +6,7 @@
   justify-content: center;
   background-color: var(--color-white-03);
 
-  padding-block: var(--section-padding-y);
+  padding-top: var(--section-padding-y);
 
   @include mobile {
     min-height: 639px;
@@ -101,7 +101,6 @@
   &__stats {
     display: flex;
     align-items: center;
-    column-gap: 64px;
     flex-wrap: wrap;
 
     @include mobile {
@@ -116,6 +115,28 @@
     align-items: start;
     text-wrap: nowrap;
     margin-top: 16px;
+
+    @include mobile-above {
+      &:first-child {
+        padding-right: 32px;
+      }
+      &:last-child {
+        padding-left: 32px;
+      }
+      &:not(:first-child & :last-child) {
+        padding-inline: 16px;
+      }
+      &:not(:last-child) {
+        border-right: var(--border);
+      }
+    }
+
+    @include mobile {
+      &:not(:last-child) {
+        padding-block: 32px;
+        border-bottom: var(--border);
+      }
+    }
   }
 
   &__brands {

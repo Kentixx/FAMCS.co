@@ -8,6 +8,8 @@ export default (props) => {
     title,
     titleId,
     buttonLabel,
+    actions,
+    isActionsHiddenOnMobile = false,
     children } = props
 
   return (
@@ -19,13 +21,24 @@ export default (props) => {
         <h2 className="section__title" id={titleId}>
           {title}
         </h2>
+        {actions && (
+          <div
+            className={clsx("section__actions", {
+              'hidden-mobile': isActionsHiddenOnMobile,
+            })}
+          >
+            {actions}
+          </div>
+        )}
       </header>
-      <div className="section__body">{children}</div>
-      <Button
+      <div className="section__body">
+        {children}
+      </div>
+      {buttonLabel && (<Button
         className="section__button"
         label={buttonLabel}
         href="/"
-      />
+      />)}
     </section>
   )
 }

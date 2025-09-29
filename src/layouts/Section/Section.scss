@@ -1,10 +1,31 @@
 .section {
-  display: grid;
-  row-gap: fluid(80, 40);
-  padding-block: var(--section-padding-y);
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(36, 24);
+  padding-top: var(--section-padding-y);
+  align-items: center;
+  background-color: var(--color-white);
 
   &__header {
     width: 100%;
     text-align: center;
+    padding-bottom: fluid(20, 8);
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    width: 218px;
+    background-color: var(--color-white);
+    border: var(--border);
+    border-radius: 60px;
+    padding: 16px;
+
+    @include hover {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      border-color: var(--color-black);
+      transition-duration: var(--transition-duration);
+    }
   }
 }

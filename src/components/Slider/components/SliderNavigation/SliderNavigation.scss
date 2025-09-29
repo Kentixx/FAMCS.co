@@ -1,0 +1,50 @@
+.slider-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--tile { // если у нас есть разные "моды" для компонента
+    column-gap: fluid(16, 12);
+    padding: fluid(16, 12);
+    background-color: var(--color-black-06);
+    border: var(--border);
+    border-radius: var(--border-radius);
+  }
+
+  &--rounded {
+    column-gap: fluid(10, 8);
+
+    .slider-navigation__arrow-button {
+      border-radius: 50%;
+    }
+  }
+
+  &--abs-bottom {
+    position: absolute;
+    z-index: 1;
+    inset-inline: fluid(50, 40); // right & left
+    bottom: fluid(20, 16);
+  }
+
+  &--space-between {
+    justify-content: space-between;
+  }
+
+  &__pagination {
+    display: flex;
+    column-gap: 3px;
+
+    &-bullet {
+      width: 16px;
+      height: 4px;
+      background-color: var(--color-black-20);
+      border-radius: 100px;
+      transition-duration: var(--transition-duration);
+
+      &.is-active {
+        width: 23px;
+        background-color: var(--color-red-45);
+      }
+    }
+  }
+}

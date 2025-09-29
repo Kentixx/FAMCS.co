@@ -6,15 +6,17 @@
 }
 
 .socials__button {
-  display: inline-flex;
-  align-items: center;
   @include square(40px);
+
+  display: inline-flex;
+  justify-content: center;
   padding: 10px;
-  border: var(--border-width-s) solid var(--color-grey);
+  border: var(--border-width-s) solid var(--color-grey-50);
   border-radius: 50%;
   background-color: var(--color-white);
 
   @include hover {
     border-color: var(--color-black);
+    background-color: var(--color-white-03);
   }
 }

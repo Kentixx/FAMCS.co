@@ -1,14 +1,17 @@
 .button {
   display: inline-flex;
-  align-items: center;
-  column-gap: 0.3em;
+  justify-content: center;
   padding: 8px 12px;
   color: var(--color-black);
   background-color: var(--color-white);
   border: var(--border);
   border-radius: var(--border-radius-m);
-}
 
-.button__icon {
-  @include flex-center;
+  &__icon {
+    @include flex-center;
+  }
+
+  &__label {
+    align-text: center;
+  }
 }
