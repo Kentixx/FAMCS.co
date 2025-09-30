@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAMCS Shop</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <script src="./src/main.js" type="module"></script>
+    <link rel="stylesheet" href="./assets/bundle.css">
+  </head>
+  <body>
+    <header class="header" data-js-overlay-menu="">
+      <div class="header__inner container">
+        <h4 class="header__title">FAMCS.CO</h4>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Shop</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">On Sale</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">New Arrivals</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Brands</a>
+            </li>
+          </ul>
+          <div class="header__search"><span class="icon">
+              <svg fill="currentColor" stroke="none" width="20" height="20">
+                <use href="./assets/images/icons.svg#search"></use>
+              </svg>
+            </span>
+            <input class="header__search-input" type="text" placeholder="Search for products...">
+          </div>
+          <div class="header__actions"><span class="icon" aria-label="Shopping cart">
+              <svg fill="currentColor" stroke="none" width="22" height="22">
+                <use href="./assets/images/icons.svg#basket"></use>
+              </svg>
+            </span><span class="icon" aria-label="Profile">
+              <svg fill="currentColor" stroke="none" width="22" height="22">
+                <use href="./assets/images/icons.svg#profile"></use>
+              </svg>
+            </span></div>
+        </nav>
+      </div>
+    </header>
+    <main class="content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__body">
+          <div class="hero__content">
+            <h1 class="hero__title h1">FAMCS IS A FAMILY. A FAMILY WITH UNIQUE STYLE</h1>
+            <p class="hero__description">Find clothes and accessories that truly reflect what you love: become a part of FAMCS fashion.</p>
+            <a class="hero__button button" href="/"><span class="button__label">Shop Now</span></a>
+            <div class="hero__stats">
+              <div class="hero__stat">
+                <h3 class="hero__stat__number">10+</h3>
+                <p class="hero__stat__label">International Brands</p>
+              </div>
+              <div class="hero__stat">
+                <h3 class="hero__stat__number">2,000+</h3>
+                <p class="hero__stat__label">High-Quality Products</p>
+              </div>
+              <div class="hero__stat">
+                <h3 class="hero__stat__number">5,000+</h3>
+                <p class="hero__stat__label">Happy Customers</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__pano"><span class="icon hero__pano-astroid hero__pano-astroid-left">
+              <svg fill="currentColor" stroke="none">
+                <use href="./assets/images/icons.svg#astroid"></use>
+              </svg>
+            </span><span class="icon hero__pano-astroid hero__pano-astroid-right">
+              <svg fill="currentColor" stroke="none">
+                <use href="./assets/images/icons.svg#astroid"></use>
+              </svg>
+            </span></div>
+        </div>
+        <div class="hero__brands"><span class="icon hero__brands-icon">
+            <svg fill="currentColor" stroke="none">
+              <use href="./assets/images/icons.svg#versace"></use>
+            </svg>
+          </span><span class="icon hero__brands-icon">
+            <svg fill="currentColor" stroke="none">
+              <use href="./assets/images/icons.svg#zara"></use>
+            </svg>
+          </span><span class="icon hero__brands-icon">
+            <svg fill="currentColor" stroke="none">
+              <use href="./assets/images/icons.svg#gucci"></use>
+            </svg>
+          </span><span class="icon hero__brands-icon">
+            <svg fill="currentColor" stroke="none">
+              <use href="./assets/images/icons.svg#prada"></use>
+            </svg>
+          </span><span class="icon hero__brands-icon">
+            <svg fill="currentColor" stroke="none">
+              <use href="./assets/images/icons.svg#calvin-klein"></use>
+            </svg>
+          </span></div>
+      </section>
+      <section class="section container goods__section" aria-labelledby="new-arrivals">
+        <header class="section__header">
+          <h2 class="section__title" id="new-arrivals">NEW ARRIVALS</h2>
+        </header>
+        <div class="section__body">
+          <a class="product-card" href="/" title="T-shirt - White Orange">
+            <img srcset="./assets/images/tshirt-white-orange-295x298.jpg 295w" src="./assets/images/tshirt-white-orange-295x298.jpg" sizes="(min-width: 295px) 295px, 100vw" width="295" height="298" alt decoding="async" loading="lazy" class="product-card__image">
+            <div class="product-card__body">
+              <h6 class="product-card__title">T-shirt - White Orange</h6>
+              <div class="rating-view" aria-label="Rating: 4.5 stars" title="Rating: 4.5 stars" style="--ratingViewValue:4.5">
+                <div class="rating-view__stars">
+                  <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="114" height="19" alt="">
+                </div>
+                <div class="rating-view__label">4.5/5</div>
+              </div>
+              <div class="product-card__pricing"><span class="product-card__price h5">40 BYN</span><span class="product-card__price-old h5">60 BYN</span>
+                <div class="product-card__discount-badge badge badge--red"><span>-33%</span></div>
+              </div>
+            </div>
+          </a>
+          <a class="product-card" href="/" title="Tea cup - White">
+            <img srcset="./assets/images/teacup-295x298.jpg 295w" src="./assets/images/teacup-295x298.jpg" sizes="(min-width: 295px) 295px, 100vw" width="295" height="298" alt decoding="async" loading="lazy" class="product-card__image">
+            <div class="product-card__body">
+              <h6 class="product-card__title">Tea cup - White</h6>
+              <div class="rating-view" aria-label="Rating: 3.5 stars" title="Rating: 3.5 stars" style="--ratingViewValue:3.5">
+                <div class="rating-view__stars">
+                  <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="114" height="19" alt="">
+                </div>
+                <div class="rating-view__label">3.5/5</div>
+              </div>
+              <div class="product-card__pricing"><span class="product-card__price h5">15 BYN</span></div>
+            </div>
+          </a>
+          <a class="product-card" href="/" title="Zip-up - White Green">
+            <img srcset="./assets/images/zipup-white-green-295x298.jpg 295w" src="./assets/images/zipup-white-green-295x298.jpg" sizes="(min-width: 295px) 295px, 100vw" width="295" height="298" alt decoding="async" loading="lazy" class="product-card__image">
+            <div class="product-card__body">
+              <h6 class="product-card__title">Zip-up - White Green</h6>
+              <div class="rating-view" aria-label="Rating: 5.0 stars" title="Rating: 5.0 stars" style="--ratingViewValue:5.0">
+                <div class="rating-view__stars">
+                  <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="114" height="19" alt="">
+                </div>
+                <div class="rating-view__label">5.0/5</div>
+              </div>
+              <div class="product-card__pricing"><span class="product-card__price h5">130 BYN</span></div>
+            </div>
+          </a>
+          <a class="product-card" href="/" title="Shopper - Black Orange">
+            <img srcset="./assets/images/shopper-black-orange-295x298.jpg 295w" src="./assets/images/shopper-black-orange-295x298.jpg" sizes="(min-width: 295px) 295px, 100vw" width="295" height="298" alt decoding="async" loading="lazy" class="product-card__image">
+            <div class="product-card__body">
+              <h6 class="product-card__title">Shopper - Black Orange</h6>
+              <div class="rating-view" aria-label="Rating: 4.0 stars" title="Rating: 4.0 stars" style="--ratingViewValue:4.0">
+                <div class="rating-view__stars">
+                  <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="114" height="19" alt="">
+                </div>
+                <div class="rating-view__label">4.0/5</div>
+              </div>
+              <div class="product-card__pricing"><span class="product-card__price h5">24 BYN</span><span class="product-card__price-old h5">30 BYN</span>
+                <div class="product-card__discount-badge badge badge--red"><span>-20%</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a class="section__button button" href="/"><span class="button__label">View All</span></a>
+      </section>
+      <section class="section container goods__section" aria-labelledby="top-selling">
+        <header class="section__header">
+          <h2 class="section__title" id="top-selling">TOP SELLING</h2>
+        </header>
+        <div class="section__body">
+          <a class="product-card" href="/" title="Zip-up - White Orange">
+            <img srcset="./assets/images/zipup-white-orange-295x298.jpg 295w" src="./assets/images/zipup-white-orange-295x298.jpg" sizes="(min-width: 295px) 295px, 100vw" width="295" height="298" alt decoding="async" loading="lazy" class="product-card__image">
+            <div class="product-card__body">
+              <h6 class="product-card__title">Zip-up - White Orange</h6>
+              <div class="rating-view" aria-label="Rating: 5.0 stars" title="Rating: 5.0 stars" style="--ratingViewValue:5.0">
+                <div class="rating-view__stars">
+                  <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="114" height="19" alt="">
+                </div>
+                <div class="rating-view__label">5.0/5</div>
+              </div>
+              <div class="product-card__pricing"><span class="product-card__price h5">65 BYN</span><span class="product-card__price-old h5">130 BYN</span>
+                <div class="product-card__discount-badge badge badge--red"><span>-50%</span></div>
+              </div>
+            </div>
+          </a>
+          <a class="product-card" href="/" title="T-shirt - Black Orange">
+            <img srcset="./assets/images/tshirt-black-orange-295x298.jpg 295w" src="./assets/images/tshirt-black-orange-295x298.jpg" sizes="(min-width: 295px) 295px, 100vw" width="295" height="298" alt decoding="async" loading="lazy" class="product-card__image">
+            <div class="product-card__body">
+              <h6 class="product-card__title">T-shirt - Black Orange</h6>
+              <div class="rating-view" aria-label="Rating: 5.0 stars" title="Rating: 5.0 stars" style="--ratingViewValue:5.0">
+                <div class="rating-view__stars">
+                  <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="114" height="19" alt="">
+                </div>
+                <div class="rating-view__label">5.0/5</div>
+              </div>
+              <div class="product-card__pricing"><span class="product-card__price h5">70 BYN</span></div>
+            </div>
+          </a>
+          <a class="product-card" href="/" title="Long sleeve - Black Red">
+            <img srcset="./assets/images/longsleeve-black-red-293x297.jpg 293w" src="./assets/images/longsleeve-black-red-293x297.jpg" sizes="(min-width: 293px) 293px, 100vw" width="293" height="297" alt decoding="async" loading="lazy" class="product-card__image">
+            <div class="product-card__body">
+              <h6 class="product-card__title">Long sleeve - Black Red</h6>
+              <div class="rating-view" aria-label="Rating: 4.5 stars" title="Rating: 4.5 stars" style="--ratingViewValue:4.5">
+                <div class="rating-view__stars">
+                  <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="114" height="19" alt="">
+                </div>
+                <div class="rating-view__label">4.5/5</div>
+              </div>
+              <div class="product-card__pricing"><span class="product-card__price h5">80 BYN</span></div>
+            </div>
+          </a>
+          <a class="product-card" href="/" title="Zip-up - Black Orange">
+            <img srcset="./assets/images/zipup-black-orange-295x298.jpg 295w" src="./assets/images/zipup-black-orange-295x298.jpg" sizes="(min-width: 295px) 295px, 100vw" width="295" height="298" alt decoding="async" loading="lazy" class="product-card__image">
+            <div class="product-card__body">
+              <h6 class="product-card__title">Zip-up - Black Orange</h6>
+              <div class="rating-view" aria-label="Rating: 5.0 stars" title="Rating: 5.0 stars" style="--ratingViewValue:5.0">
+                <div class="rating-view__stars">
+                  <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="114" height="19" alt="">
+                </div>
+                <div class="rating-view__label">5.0/5</div>
+              </div>
+              <div class="product-card__pricing"><span class="product-card__price h5">110 BYN</span><span class="product-card__price-old h5">130 BYN</span>
+                <div class="product-card__discount-badge badge badge--red"><span>-15%</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a class="section__button button" href="/"><span class="button__label">View All</span></a>
+      </section>
+      <section class="section container reviews section">
+        <header class="section__header">
+          <h2 class="section__title"></h2>
+        </header>
+        <div class="section__body">
+          <div class="reviews__header">
+            <h2>Our Happy Customers</h2>
+          </div>
+          <div class="reviews__content">
+            <div class="review-card">
+              <header class="review-card__header">
+                <div class="rating-view" aria-label="Rating: 5 stars" title="Rating: 5 stars" style="--ratingViewValue:5">
+                  <div class="rating-view__stars">
+                    <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="139" height="23" alt="">
+                  </div>
+                </div>
+                <div class="review-card__author">
+                  <h4 class="review-card__author-name h6">Orlovich Y. L.</h4><span class="icon review-card__author-verified-icon">
+                    <svg fill="currentColor" stroke="none">
+                      <use href="./assets/images/icons.svg#verified-tick"></use>
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <div>
+                <p class="review-card__description">The zip-up white hoodie is a true masterpiece. Perfect to wear at home after a long work day at the faculty. Our students really know how to make clothes! I only wish they knew Discrete mathematics that well too.</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <header class="review-card__header">
+                <div class="rating-view" aria-label="Rating: 5 stars" title="Rating: 5 stars" style="--ratingViewValue:5">
+                  <div class="rating-view__stars">
+                    <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="139" height="23" alt="">
+                  </div>
+                </div>
+                <div class="review-card__author">
+                  <h4 class="review-card__author-name h6">Ivan H.</h4><span class="icon review-card__author-verified-icon">
+                    <svg fill="currentColor" stroke="none">
+                      <use href="./assets/images/icons.svg#verified-tick"></use>
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <div>
+                <p class="review-card__description">This black-orange hoodie is so much more than just clothing. It feels like a warm hug from my dear faculty. Wearing &#x27;FAMCS is Family&#x27; isn&#x27;t just a slogan; it&#x27;s a feeling of belonging. Plus, it&#x27;s incredibly comfortable for those long study nights!</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <header class="review-card__header">
+                <div class="rating-view" aria-label="Rating: 4.6 stars" title="Rating: 4.6 stars" style="--ratingViewValue:4.6">
+                  <div class="rating-view__stars">
+                    <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="139" height="23" alt="">
+                  </div>
+                </div>
+                <div class="review-card__author">
+                  <h4 class="review-card__author-name h6">Razmyslovich G. P. </h4><span class="icon review-card__author-verified-icon">
+                    <svg fill="currentColor" stroke="none">
+                      <use href="./assets/images/icons.svg#verified-tick"></use>
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <div>
+                <p class="review-card__description">I only bought the FAMCS hoodie because of the beautiful hyperboloid placed on it. At least one thing my students did well! But don’t relax. Your next colloquium is already coming.</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <header class="review-card__header">
+                <div class="rating-view" aria-label="Rating: 5 stars" title="Rating: 5 stars" style="--ratingViewValue:5">
+                  <div class="rating-view__stars">
+                    <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="139" height="23" alt="">
+                  </div>
+                </div>
+                <div class="review-card__author">
+                  <h4 class="review-card__author-name h6">Misha</h4>
+                </div>
+              </header>
+              <div>
+                <p class="review-card__description">Every morning, drinking coffee from my FAMCS mug grounds me. It&#x27;s a simple daily reminder that I&#x27;m part of a community that supports me, especially during tough exam periods. It&#x27;s my little piece of FAMCS.</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <header class="review-card__header">
+                <div class="rating-view" aria-label="Rating: 4.6 stars" title="Rating: 4.6 stars" style="--ratingViewValue:4.6">
+                  <div class="rating-view__stars">
+                    <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="139" height="23" alt="">
+                  </div>
+                </div>
+                <div class="review-card__author">
+                  <h4 class="review-card__author-name h6">Rodion</h4>
+                </div>
+              </header>
+              <div>
+                <p class="review-card__description">This zip-up contains a lot of my best memories from FAMCS!</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <header class="review-card__header">
+                <div class="rating-view" aria-label="Rating: 5 stars" title="Rating: 5 stars" style="--ratingViewValue:5">
+                  <div class="rating-view__stars">
+                    <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="139" height="23" alt="">
+                  </div>
+                </div>
+                <div class="review-card__author">
+                  <h4 class="review-card__author-name h6">Tima Bowt</h4><span class="icon review-card__author-verified-icon">
+                    <svg fill="currentColor" stroke="none">
+                      <use href="./assets/images/icons.svg#verified-tick"></use>
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <div>
+                <p class="review-card__description">More than just gear.</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <header class="review-card__header">
+                <div class="rating-view" aria-label="Rating: 5 stars" title="Rating: 5 stars" style="--ratingViewValue:5">
+                  <div class="rating-view__stars">
+                    <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="139" height="23" alt="">
+                  </div>
+                </div>
+                <div class="review-card__author">
+                  <h4 class="review-card__author-name h6">Sonya Shrek</h4><span class="icon review-card__author-verified-icon">
+                    <svg fill="currentColor" stroke="none">
+                      <use href="./assets/images/icons.svg#verified-tick"></use>
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <div>
+                <p class="review-card__description">I just came to work in this. Boss immediately issued a bonus and a letter of resignation...</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <header class="review-card__header">
+                <div class="rating-view" aria-label="Rating: 4 stars" title="Rating: 4 stars" style="--ratingViewValue:4">
+                  <div class="rating-view__stars">
+                    <img class="rating-view__stars-filled" src="./assets/images/stars-filled.svg" width="139" height="23" alt="">
+                  </div>
+                </div>
+                <div class="review-card__author">
+                  <h4 class="review-card__author-name h6">Kostya L.</h4><span class="icon review-card__author-verified-icon">
+                    <svg fill="currentColor" stroke="none">
+                      <use href="./assets/images/icons.svg#verified-tick"></use>
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <div>
+                <p class="review-card__description">I incredibly like this website and merch, it&#x27;s more expensive to me than any nuclear missile. LET&#x27;S GOOO!!</p>
+              </div>
+            </div>
+          </div>
+          <p class="reviews__description h5">Your own review may be here :)</p>
+        </div>
+      </section>
+    </main>
+    <section class="banner container" aria-labelledby="banner-title">
+      <div class="banner__inner">
+        <h2 class="banner__title" id="banner-title">STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
+        <div class="banner__actions">
+          <div class="banner__search"><span class="icon banner__search-icon">
+              <svg fill="currentColor" stroke="none" width="24" height="24">
+                <use href="./assets/images/icons.svg#email"></use>
+              </svg>
+            </span>
+            <input class="banner__search-input" type="email" placeholder="Enter your email address">
+          </div>
+          <a class="banner__button button" href="/"><span class="button__label">Subscribe to Newsletter</span></a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div class="footer__main">
+          <div class="footer__info">
+            <h4 class="footer__info-title h2">FAMCS.CO</h4>
+            <p class="footer__info-description">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+            <div class="socials">
+              <a class="socials__button button" href="/"><span class="icon button__icon">
+                  <svg fill="currentColor" stroke="none">
+                    <use href="./assets/images/icons.svg#twitter"></use>
+                  </svg>
+                </span><span class="button__label"></span></a>
+              <a class="socials__button button" href="/"><span class="icon button__icon">
+                  <svg fill="currentColor" stroke="none">
+                    <use href="./assets/images/icons.svg#facebook"></use>
+                  </svg>
+                </span><span class="button__label"></span></a>
+              <a class="socials__button button" href="/"><span class="icon button__icon">
+                  <svg fill="currentColor" stroke="none">
+                    <use href="./assets/images/icons.svg#instagram"></use>
+                  </svg>
+                </span><span class="button__label"></span></a>
+              <a class="socials__button button" href="https://github.com/Kentixx/FAMCS.co"><span class="icon button__icon">
+                  <svg fill="currentColor" stroke="none">
+                    <use href="./assets/images/icons.svg#github"></use>
+                  </svg>
+                </span><span class="button__label"></span></a>
+            </div>
+          </div>
+          <nav class="footer__menu">
+            <div class="footer__menu-column">
+              <a class="footer__menu-title h6" href="/">COMPANY</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">About</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Features</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Works</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Career</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a class="footer__menu-title h6" href="/">HELP</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Customer Support</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Delivery Details</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Terms &amp; Conditions</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a class="footer__menu-title h6" href="/">FAQ</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Account</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Manage Deliveries</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Orders</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Payments</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a class="footer__menu-title h6" href="/">RESOURCES</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Free eBooks</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Development Tutorial</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">How to - Blog</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="/">Youtube Playlist</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__copyright">
+          <p>Famcs.co © 2000-2025, All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
